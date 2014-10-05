@@ -65,7 +65,7 @@ design can tolerate up to 60 seconds clock of skew before both parties meet
 in the same shard.
 
 Note that this implies that we use at least four shards, allowing an offset
-of at least twi in both directions.
+of at least two in both directions.
 
 # Isolation Solves the Coordination Problem
 
@@ -121,7 +121,7 @@ There are three Ruby scripts, a producer, a consumer and an observer that prints
 out the current message count and pending message count for each shard.
 
 The scripts use the new Datastax
-[Cassandra driver for Ruby](https://github.com/datastax/ruby-driver)
+[Cassandra driver for Ruby](https://github.com/datastax/ruby-driver).
 Currently installation works best by downloading the source from github and
 installing the gem from these sources directly.
 
