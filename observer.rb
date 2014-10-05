@@ -1,6 +1,7 @@
 #!/usr/bin/env ruby
 require 'cassandra'
 require 'optparse'
+equire_relative 'queue'
 
 host='127.0.0.1'
 keyspace='foo'
