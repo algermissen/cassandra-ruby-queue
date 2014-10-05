@@ -25,8 +25,8 @@ This is the reason why queing use cases in general are said to be one of
 the worst anti patterns for Cassandra.
 
 Now, what if you are in a situation where you need some form of queuing
-but which does not require the kind of throughput that demands a
-specialized queuing system without doubt.
+but not enough to truly justify adding a specialized queuing system to your
+landscape?
 
 Can we not get Cassandra to queue the little things for us? The goal of
 this project is to explore the possibilities and limitations.
