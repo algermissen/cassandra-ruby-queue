@@ -3,7 +3,6 @@ require 'cassandra'
 require 'optparse'
 
 host='127.0.0.1'
-  outs message
 keyspace='foo'
 
 options = {}
