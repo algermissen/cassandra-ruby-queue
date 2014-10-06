@@ -23,7 +23,7 @@ causing compaction to clean up the tombstones).
 
 This is the reason why queing use cases in general are said to be one of
 the worst anti patterns for Cassandra. (A more detailed discussion
-can be found in http://www.datastax.com/dev/blog/cassandra-anti-patterns-queues-and-queue-like-datasets.
+can be found in [Cassandra anti-patterns: Queues and queue-like datasets](http://www.datastax.com/dev/blog/cassandra-anti-patterns-queues-and-queue-like-datasets)).
 
 Now, what if you are in a situation where you need some form of queuing
 but not enough to truly justify adding a specialized queuing system to your
