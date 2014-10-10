@@ -3,6 +3,13 @@ cassandra-ruby-queue
 
 Simple priority queue with Cassandra and Ruby
 
+**UPDATE**: This design has spawned an [email thread](http://mail-archives.apache.org/mod_mbox/cassandra-user/201410.mbox/%3c73336ABA-90FD-4821-8501-ACC8A6E4ED52@nordsc.com%3e) on the Cassandra
+mailing list where it has been pointed out that the Netflix approach
+by which this project is inspired, has several problems and that
+the design not sufficiently solve the tombstones problem for 
+significant workloads. I will be exploring a modified approach
+where the due time is part of the partition key.
+
 As an eventually consistent database, Cassandra cannot immediately erase
 data when receiving a deletion query. Nodes might be down or temporarily
 unreachable and such nodes would never be able to learn about a delete
@@ -32,10 +39,6 @@ landscape?
 Can we not get Cassandra to queue the little things for us? The goal of
 this project is to explore the possibilities and limitations.
 
-*Update*: This design has spawned an [email thread](http://mail-archives.apache.org/mod_mbox/cassandra-user/201410.mbox/%3c73336ABA-90FD-4821-8501-ACC8A6E4ED52@nordsc.com%3e) on the Cassandra
-mailing list where it has been pointed out that the Netflix approach
-by which this project is inspired, has several problems and that
-the design not sufficiently solves the tombstones problem.
 
 # Distributing the Workload
 
