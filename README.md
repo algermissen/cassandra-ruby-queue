@@ -32,6 +32,11 @@ landscape?
 Can we not get Cassandra to queue the little things for us? The goal of
 this project is to explore the possibilities and limitations.
 
+*Update*: This design has spawned an [email thread](http://mail-archives.apache.org/mod_mbox/cassandra-user/201410.mbox/%3c73336ABA-90FD-4821-8501-ACC8A6E4ED52@nordsc.com%3e) on the Cassandra
+mailing list where it has been pointed out that the Netflix approach
+by which this project is inspired, has several problems and that
+the design not sufficiently solves the tombstones problem.
+
 # Distributing the Workload
 
 Given that queing implies some form of ordering, it is clear that the
