@@ -7,8 +7,8 @@ Simple priority queue with Cassandra and Ruby
 mailing list where it has been pointed out that the Netflix approach
 by which this project is inspired, has several problems and that
 the design does not sufficiently solve the tombstones problem for 
-significant workloads. I will explore a modified approach
-where the due time is part of the partition key.
+significant workloads. an improved design can be found
+[here](https://github.com/algermissen/cassandra-ruby-sharded-workers).
 
 As an eventually consistent database, Cassandra cannot immediately erase
 data when receiving a deletion query. Nodes might be down or temporarily
